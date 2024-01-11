@@ -1,4 +1,11 @@
 {
+  "name": "docker-inertia-typescript",
+  "version": "0.1.0",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:fujioka8700/docker-inertia-typescript.git"
+  },
   "private": true,
   "type": "module",
   "scripts": {
