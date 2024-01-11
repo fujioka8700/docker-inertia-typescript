@@ -1,18 +1,18 @@
-import { Config, RouteParam, RouteParams, Router } from "ziggy-js";
+import { Config, RouteParam, Router } from "ziggy-js";
 
 declare global {
     declare function route(
         name?: undefined,
         params?: RouteParamsWithQueryOverload | RouteParam,
         absolute?: boolean,
-        config?: Config
+        config?: Config,
     ): Router;
 
     declare function route(
         name: string,
         params?: RouteParamsWithQueryOverload | RouteParam,
         absolute?: boolean,
-        config?: Config
+        config?: Config,
     ): string;
 }
 declare module "vue" {
@@ -21,13 +21,13 @@ declare module "vue" {
             name?: undefined,
             params?: RouteParamsWithQueryOverload | RouteParam,
             absolute?: boolean,
-            config?: Config
+            config?: Config,
         ) => Router) &
             ((
                 name: string,
                 params?: RouteParamsWithQueryOverload | RouteParam,
                 absolute?: boolean,
-                config?: Config
+                config?: Config,
             ) => string);
     }
 }
