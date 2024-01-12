@@ -13,9 +13,9 @@
     "strict": true,
     "skipLibCheck": true,
     "allowJs": true,
-    "types": ["vite/client"],
+    "types": ["vite/client", "vitest/globals"],
     "outDir": "./.build"
   },
   "include": ["resources/js/**/*"],
-  "exclude": ["node_modules", "public", ".build"]
+  "exclude": ["node_modules", "public", "resources/**/__tests__/*", ".build"]
 }
